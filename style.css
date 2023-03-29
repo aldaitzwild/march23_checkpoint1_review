@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* header */
+
+.navbar {
+    background-color: burlywood;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.navbar > img {
+    display: none;
+}
+
+/* Article */
+.card {
+    border: 1px solid black;
+    background-color: rgb(153, 194, 194);
+    border-radius: 15px;
+    padding: 8px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        
+        justify-content: space-between;
+    }
+
+    .navbar > img {
+        display: initial;
+    }
+
+    .authorPicture {
+        display: block;
+    }
+
+    .card {
+        flex-direction: column-reverse;
+    }
+
+    .textContent {
+        margin-left: 10px;
+    }
+
+    .textContent h3 {
+        display: none;
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
